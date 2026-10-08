@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Multimedia World</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Multimedia World</h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#media">Media</a>
+            <a href="#interactive">Interactive</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to Multimedia World</h1>
+
+            <p>
+                Explore images, audio, video, animation
+                and interactive graphics.
+            </p>
+
+            <button onclick="showMessage()">
+                Explore Now
+            </button>
+
+        </div>
+
+        <div class="animated-circle"></div>
+
+    </section>
+
+
+    <!-- Media Section -->
+    <section id="media">
+
+        <h2 class="section-title">Multimedia Gallery</h2>
+
+        <div class="media-container">
+
+            <!-- Image -->
+            <div class="card">
+
+                <h3>Image</h3>
+
+                <img
+                    src="media/para taktsang.jpg"
+                    alt="Para Taktsang">
+
+                <p>Breathtaking site of Bhutan.</p>
+
+            </div>
+
+
+            <!-- Audio -->
+            <div class="card">
+
+                <h3>Audio</h3>
+
+                <audio controls>
+                    <source
+                        src="media/meto dumra.mpeg"
+                        type="audio/mpeg">
+
+                    Your browser does not support audio.
+                </audio>
+
+                <p>Listen to an audio file.</p>
+
+            </div>
+
+
+            <!-- Video -->
+            <div class="card">
+
+                <h3>Video</h3>
+
+                <iframe
+                    src="https://www.youtube.com/embed/QrAzM9wZmoo"
+                    title="Bhutan Tourism Video | Bhutan Festival Series | Thimphu Tshechu"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+
+                <p>
+                    Watch a video about Bhutan's Thimphu Tshechu.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Interactive Graphics -->
+    <section id="interactive">
+
+        <h2 class="section-title">
+            Interactive Graphics
+        </h2>
+
+        <div class="interactive-box">
+
+            <div
+                id="interactive-circle"
+                onclick="changeCircle()">
+
+                Click Me!
+
+            </div>
+
+            <p>
+                Click the circle to change its appearance.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Multimedia World
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
